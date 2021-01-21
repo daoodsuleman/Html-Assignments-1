@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Signup</title>
+    <link href="../css/stylesheetweb.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpeg" href="../images/Capture.PNG">
+    <script src="../js/crime.js"></script>
+</head>
+
+<body class="foradminloginbody">
+    <h1 class="h1forhome">
+        <a href="index.html"> <img src="../images/Capture.PNG" width="100px" height="120px" class="logo"></a>
+        <p>SIAL-REPORTING SYSTEM</p>
+    </h1>
+
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="userlogin.html">User</a></li>
+                <li><a href="police.html">Police</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="iphonediv">
+        <figure>
+            <img src="../images/new.png" alt="laptop" height="300px" width="380px">
+        </figure>
+    </div>
+
+    <aside class="foradminloginaside">
+
+        <form method="POST">
+            <h1 style="font-size: 40px; text-shadow: 8px 2px 5px black;">User Signup</h1>
+            <tr>
+                <td><input class="forusercontact" type="text" name="name" required placeholder="Enter Name" size="31"
+                        autofocus onkeypress="return namevalidity(event)" maxlength="20"> </td>
+            </tr>
+            <br />
+            <br />
+            <tr>
+                <td><input class="forusercontact" type="text" name="username" placeholder="Enter Username" size="31"
+                        required minlength="6">
+                </td>
+            </tr><br /> <br />
+            <tr>
+                <td><input class="forusercontact" type="number" name="age" placeholder="Enter your Age" size="31"
+                        required>
+                </td>
+            </tr><br /> <br />
+            <tr>
+                <td> <input type="radio" name="Gender" value="male" required class="forusercontact" required> Male
+                    <input type="radio" name="Gender" value="female" required class="forusercontact" required> Female
+
+                </td>
+            </tr><br /><br />
+            <tr>
+                <td><input class="forusercontact" type="text" name="city" placeholder="Enter your City Name" size="31"
+                        required>
+                </td>
+            </tr><br /> <br />
+            <tr>
+                <td><input class="forusercontact" type="password" name="userpass" size="31"
+                        placeholder="Enter a Strong Password" maxlength="20" minlength="8" id="password"
+                        onkeyup='check();'>
+                </td>
+                
+            </tr><br /><br />
+            <tr>
+                <td><input class="forusercontact" type="password" name="con_userpass" size="31"
+                        placeholder="Confirm Password" maxlength="20" minlength="8" id="confirm_password"
+                        onkeyup='check();'><br /><br /><span id='message'></span>
+                </td>
+            </tr>
+            <input type="checkbox" onclick="return myFunction()"> Show Password <br/><br/>
+
+            <tr>
+                <td><input class="loginbutton" type="submit" name="submit" value="Signup"> </td>
+            </tr><br /><br />
+
+
+        </form>
+    </aside>
+
+
+    <div class="cpr">
+        <p>Copy Rights &copy; All Rights Reserved 2020</p>
+    </div>
+
+
+</body>
+
+</html>

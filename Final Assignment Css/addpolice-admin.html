@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Police</title>
+    <link href="../css/stylesheetweb.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpeg" href="../images/Capture.PNG">
+    <script src="../js/crime.js"></script>
+</head>
+
+<body class="foradminloginbody">
+    <h1 class="h1forhome">
+        <a href="index.html"> <img src="../images/Capture.PNG" width="100px" height="120px" class="logo"></a>
+        <p>SIAL-REPORTING SYSTEM</p>
+    </h1>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="userreports-admin.html">User Reports</a></li>
+                <li><a href="Investigation-admin.html">Investigation</a></li>
+                <li><a href="casecompleted-admin.html">Case Completed</a></li>
+                <li><a href="casedetail-admin.html">Case Details</a></li>
+                <li><a href="addpolice-admin.html">Add Polce</a></li>
+                <li><a href="adminpannel.html">Admin Pannel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <p style="font-size: 28px; margin-left: 55px; font-weight: bolder;">Add Police</p>
+    <div class="iphonediv">
+        <figure style="margin-left: 55px; margin-top: 20px; margin-bottom: 0px;">
+            <img src="../images/police.png" alt="police" height="200px" width="200px">
+        </figure>
+    </div><br />
+
+    <aside class="foradminloginaside">
+
+        <form method="POST">
+            <h1 style="font-size: 40px; text-shadow: 8px 2px 5px black; ">Add Police</h1>
+            <tr>
+                <td><input class="forusercontact" type="text" name="firstname" required placeholder="First Name"
+                        size="31" autofocus onkeypress="return namevalidity(event)" maxlength="12"> </td>
+            </tr>
+            <br />
+            <br />
+            <tr>
+                <td><input class="forusercontact" type="text" name="lastname" placeholder="Last Name" size="31" required
+                        onkeypress="return namevalidity(event)" maxlength="12"> </td>
+            </tr><br /> <br />
+            <tr>
+                <td><input class="forusercontact" type="text" name="fathername" required placeholder="Father Name"
+                        size="31" onkeypress="return namevalidity(event)" maxlength="20"> </td>
+            </tr><br /><br />
+            <tr>
+                <td><input class="forusercontact" type="email" name="email" required placeholder="Email" size="31">
+                </td>
+            </tr><br /><br />
+            <tr>
+                <td><input class="forusercontact" type="text" name="Address" size="31" placeholder="Address" required
+                        maxlength="40">
+                </td>
+            </tr>
+            <br /><br />
+            <tr>
+                <td><input class="forusercontact" type="text" name="City" required placeholder="City" size="31"
+                        onkeypress="return namevalidity(event)" maxlength="18"> </td>
+            </tr><br /><br />
+            <tr>
+                <td><input class="forusercontact" type="number" name="Age" required placeholder="Age" size="31"
+                        onkeypress="return numbervalidity(event)"> </td>
+            </tr><br /><br />
+            <tr>
+                <td> <input type="radio" name="Gender" value="male" required class="forusercontact"> Male
+                    <input type="radio" name="Gender" value="female" required class="forusercontact"> Female
+
+                </td>
+            </tr><br /><br />
+
+            <tr>
+                <td><input type="radio" name="Status" value="single" required class="forusercontact"> Single
+                    <input type="radio" name="Status" value="married" required class="forusercontact"> Married
+                </td>
+            </tr><br /><br />
+            <tr>
+                <td>Upload Image:</td><br /><br />
+                <td><input class="forusercontact" type="file" name="img/vid" size="31" required style="background: none; border: none; "> </td>
+            </tr><br /><br />
+            <tr>
+                <td><input class="forusercontact" type="text" name="usernamepolice" required
+                        placeholder="Assign Username" size="31" maxlength="15" minlength="8"> </td>
+            </tr><br /><br />
+            <tr>
+                <td><input class="forusercontact" type="password" name="passpolice" required
+                        placeholder="Assign Password" size="31" maxlength="20" minlength="8" onkeyup='check();'
+                        id="password"> </td>
+            </tr><br /><br />
+            <tr>
+                <td><input class="forusercontact" type="password" name="con_userpass" size="31"
+                        placeholder="Confirm Password" maxlength="20" minlength="8" id="confirm_password"
+                        onkeyup='check();'><br /><br /><span id='message'></span>
+                </td>
+            </tr>&nbsp;
+            <input type="checkbox" onclick="return myFunction()"> Show Password <br/><br/>
+
+            <tr>
+                <td><input class="loginbutton" type="submit" name="submit" value="Add Officer"> </td>
+            </tr><br /><br />
+
+
+        </form>
+    </aside>
+
+
+    <div class="cpr">
+        <p>Copy Rights &copy; All Rights Reserved 2020</p>
+    </div>
+
+
+</body>
+
+</html>

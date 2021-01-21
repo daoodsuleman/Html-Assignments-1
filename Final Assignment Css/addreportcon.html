@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Report</title>
+    <link href="../css/stylesheetweb.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,300&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" type="image/jpeg" href="../images/Capture.PNG">
+</head>
+
+<body class="foradminloginbody">
+    <h1 class="h1forhome">
+        <a href="index.html"> <img src="../images/Capture.PNG" width="100px" height="120px" class="logo"></a>
+        <p>SIAL-REPORTING SYSTEM</p>
+    </h1>
+
+    <header>
+    
+        <nav>
+            <ul>
+                
+                <li><a href="userreports-police.html">User Reports</a></li>
+                <li><a href="viewcases-police.html">View Cases</a></li>
+                <li><a href="addrep-police.html">Add Report</a></li>
+                <li><a href="policepannel.html">Police Pannel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="iphonediv">
+        <figure style="margin-left: 0px; margin-top: 100px; margin-bottom: 0px; ">
+            <img src="../images/report.png" alt="police" height="180px" width="355px">
+        </figure>
+    </div><br /><br /><br /><br />
+
+    <aside class="foradminloginaside">
+
+        <form method="POST">
+            <h1 style="font-size: 40px; text-shadow: 8px 2px 5px black; ">Add Report</h1>
+            <tr>
+            <td><input class="forusercontact" type="text" name="placeofinc" required placeholder="Place of Incident"
+                    size="31" maxlength="40">
+            </td>
+            </tr><br /><br />
+            <tr>
+                <td><input class="forusercontact" type="date" name="date" required placeholder="Date" size="31">
+                </td>
+            </tr><br /><br />
+            <tr>
+                <td><input class="forusercontact" type="time" name="time" placeholder="Time of Incident" size="31">
+                </td>
+            </tr>
+            <br /><br />
+
+            <tr>
+                <td><textarea class="forusercontact" type="text" name="Description" required
+                        placeholder="Add Description" cols="30" rows="6" maxlength="300"></textarea>
+                </td>
+            </tr><br /><br />
+            <tr>
+                <td ><a href="addrep-police.html" class="loginbutton" style="background-color: white; color: black;">Back</a> </td>
+            </tr>
+
+            <tr>
+                <td><input class="loginbutton" type="submit" name="submit" value="Add Report"> </td>
+            </tr><br /><br />
+
+
+        </form>
+    </aside>
+
+
+    <div class="cpr">
+        <p>Copy Rights &copy; All Rights Reserved 2020</p>
+    </div>
+
+
+</body>
+
+</html>

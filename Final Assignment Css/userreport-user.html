@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Report</title>
+    <link href="../css/stylesheetweb.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpeg" href="../images/Capture.PNG">
+    <script src="../js/crime.js"></script>
+</head>
+
+<body class="foradminloginbody">
+    <h1 class="h1forhome">
+        <a href="index.html"> <img src="../images/Capture.PNG" width="100px" height="120px" class="logo"></a>
+        <p>SIAL-REPORTING SYSTEM</p>
+    </h1>
+
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="userreport-user.html">Add Report</a></li>
+                <li><a href="userpannel.html">User Pannel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="foradminloginaside">
+        <h1 style="font-size: 40px; text-shadow: 8px 2px 5px black; ">User Report</h1>
+        <form method="POST">
+
+
+            <tr>
+                <td><input class="forusercontact" type="email" name="email" placeholder="Provide your Email" size="31"
+                        autofocus required>
+                </td>
+            </tr><br /> <br />
+            <tr>
+                <td><input class="forusercontact" type="number" name="cnic" placeholder="Enter Your CNIC No." size="31"
+                        onkeypress="return numbervalidity(event)" minlength="13" maxlength="15" required>
+                </td>
+            </tr><br /> <br />
+            <tr>
+                <td><input class="forusercontact" type="tel" name="c_no" required placeholder="Enter Contact No."
+                        size="31" onkeypress="return numbervalidity(event)" minlength="11" required> </td>
+            </tr><br /><br />
+
+            <tr>
+                <td><input class="forusercontact" type="text" name="add" required
+                        placeholder="Enter Address of Incident" size="31"> </td>
+            </tr><br /><br />
+            <tr>
+                <td><textarea class="forusercontact" type="text" name="detail" required placeholder="Enter Details"
+                        cols="30" rows="6"></textarea> </td>
+            </tr><br /><br />
+            <tr>
+                <td>Upload Image/Video:</td><br /><br />
+                <td><input class="forusercontact" type="file" name="img/vid" multiple="multiple" size="31"> </td>
+            </tr>
+            <br /><br />
+            <tr>
+                <td><input class="loginbutton" type="submit" name="submit" value="Submit"> </td>
+            </tr>
+        </form>
+    </aside>
+
+
+
+    <div class="cpr">
+        <p>Copy Rights &copy; All Rights Reserved 2020</p>
+    </div>
+
+
+</body>
+
+</html>
